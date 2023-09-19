@@ -1,4 +1,4 @@
-function loopingTriangle(lineCount = 7, character = '#') {
+function LoopingTriangle(lineCount = 7, character = '#') {
     let i = 1;
     let line = '';
     lineCount = lineCount === undefined ? 7 : lineCount;
@@ -11,4 +11,4 @@ function loopingTriangle(lineCount = 7, character = '#') {
     
     return line;
 }
-module.exports = loopingTriangle;
+module.exports = LoopingTriangle;
