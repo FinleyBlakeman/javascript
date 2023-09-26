@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1695758513309" clover="3.2.0">
-  <project timestamp="1695758513309" name="All files">
-    <metrics statements="40" coveredstatements="39" conditionals="37" coveredconditionals="32" methods="6" coveredmethods="6" elements="83" coveredelements="77" complexity="0" loc="40" ncloc="40" packages="4" files="4" classes="4"/>
+<coverage generated="1695760945255" clover="3.2.0">
+  <project timestamp="1695760945255" name="All files">
+    <metrics statements="58" coveredstatements="57" conditionals="46" coveredconditionals="41" methods="9" coveredmethods="9" elements="113" coveredelements="107" complexity="0" loc="58" ncloc="58" packages="7" files="7" classes="7"/>
     <package name="Chessboard">
       <metrics statements="13" coveredstatements="13" conditionals="9" coveredconditionals="9" methods="1" coveredmethods="1"/>
       <file name="chessboard.component.js" path="/Users/Finley/RiderProjects/javascript/src/Chessboard/chessboard.component.js">
@@ -19,6 +19,42 @@
         <line num="16" count="11" type="stmt"/>
         <line num="21" count="2" type="stmt"/>
         <line num="23" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="Count Bs">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="count-bs.component.js" path="/Users/Finley/RiderProjects/javascript/src/Count Bs/count-bs.component.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="8" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="Count Char">
+      <metrics statements="8" coveredstatements="8" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
+      <file name="count-char.component.js" path="/Users/Finley/RiderProjects/javascript/src/Count Char/count-char.component.js">
+        <metrics statements="8" coveredstatements="8" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="17" type="stmt"/>
+        <line num="4" count="17" type="cond" truecount="4" falsecount="0"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="8" count="14" type="stmt"/>
+        <line num="9" count="138" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="14" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="Even or Odd">
+      <metrics statements="6" coveredstatements="6" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+      <file name="is-even.component.js" path="/Users/Finley/RiderProjects/javascript/src/Even or Odd/is-even.component.js">
+        <metrics statements="6" coveredstatements="6" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="66" type="cond" truecount="3" falsecount="0"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="8" count="62" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
       </file>
     </package>
     <package name="FizzBuzz">
