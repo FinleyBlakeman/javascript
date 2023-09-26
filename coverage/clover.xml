@@ -1,28 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1695163164101" clover="3.2.0">
-  <project timestamp="1695163164101" name="All files">
-    <metrics statements="36" coveredstatements="36" conditionals="37" coveredconditionals="33" methods="5" coveredmethods="5" elements="78" coveredelements="74" complexity="0" loc="36" ncloc="36" packages="3" files="3" classes="3"/>
+<coverage generated="1695757390143" clover="3.2.0">
+  <project timestamp="1695757390143" name="All files">
+    <metrics statements="32" coveredstatements="32" conditionals="27" coveredconditionals="25" methods="5" coveredmethods="5" elements="64" coveredelements="62" complexity="0" loc="32" ncloc="32" packages="3" files="3" classes="3"/>
     <package name="Chessboard">
-      <metrics statements="17" coveredstatements="17" conditionals="19" coveredconditionals="17" methods="1" coveredmethods="1"/>
+      <metrics statements="13" coveredstatements="13" conditionals="9" coveredconditionals="9" methods="1" coveredmethods="1"/>
       <file name="chessboard.component.js" path="/Users/Finley/RiderProjects/javascript/src/Chessboard/chessboard.component.js">
-        <metrics statements="17" coveredstatements="17" conditionals="19" coveredconditionals="17" methods="1" coveredmethods="1"/>
+        <metrics statements="13" coveredstatements="13" conditionals="9" coveredconditionals="9" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="2" count="2" type="stmt"/>
         <line num="3" count="2" type="stmt"/>
         <line num="4" count="2" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="8" count="2" type="stmt"/>
-        <line num="9" count="11" type="stmt"/>
-        <line num="10" count="11" type="cond" truecount="4" falsecount="0"/>
-        <line num="11" count="11" type="cond" truecount="3" falsecount="1"/>
-        <line num="12" count="11" type="cond" truecount="4" falsecount="0"/>
-        <line num="13" count="11" type="cond" truecount="3" falsecount="1"/>
-        <line num="14" count="11" type="cond" truecount="2" falsecount="0"/>
-        <line num="15" count="11" type="stmt"/>
-        <line num="17" count="11" type="stmt"/>
         <line num="19" count="2" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
+        <line num="20" count="11" type="stmt"/>
+        <line num="21" count="73" type="cond" truecount="2" falsecount="0"/>
+        <line num="22" count="38" type="cond" truecount="2" falsecount="0"/>
+        <line num="25" count="35" type="cond" truecount="2" falsecount="0"/>
+        <line num="28" count="73" type="cond" truecount="2" falsecount="0"/>
+        <line num="29" count="11" type="stmt"/>
+        <line num="34" count="2" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
       </file>
     </package>
     <package name="FizzBuzz">

@@ -1,21 +1,23 @@
 const Chessboard = (bindingSize = 9) => {
-    let rowCount = 1;
-    let columnCount = 1;
     let chessboard = '';
     const odd = ' ';
     const even = '#';
-    
-    while(rowCount < bindingSize){
-        while(columnCount < bindingSize){
-            if(columnCount % 2 !== 0 && rowCount % 2 !== 0) chessboard += odd;
-            if(columnCount % 2 !== 0 && rowCount % 2 === 0) chessboard += odd;
-            if(columnCount % 2 === 0 && rowCount % 2 !== 0) chessboard += even;
-            if(columnCount % 2 === 0 && rowCount % 2 === 0) chessboard += even;
-            if(columnCount === bindingSize - 1) chessboard += '\n';
-            columnCount++
+
+    for (let i = 1; i < bindingSize; i++) {
+        for (let j = 1; j < bindingSize; j++) {
+            if (i % 2 !== 0) {
+                chessboard += j % 2 !== 0 ? odd : even;
+            }
+            else {
+                chessboard += j % 2 !== 0 ? even : odd;
+            }
+
+            if (j === bindingSize - 1) {
+                chessboard += '\n'
+            }
         }
-        rowCount++;
     }
+    
     return chessboard;
 }
 module.exports = Chessboard;
