@@ -1,0 +1,28 @@
+<app-page-header [title]="'Circular Image Gallery'"></app-page-header>
+<div class="container">
+  <div class="component__card">
+    <div class="image-gallery">
+      <p><small>CSS sin() and cos() does <strong>NOT</strong> work in your browser.</small></p>
+      <figure class="image-gallery image-gallery__figure">
+        <img *ngFor="let image of images"
+             class="image-gallery image-gallery__image-bubble image-gallery__image-bubble--{{image.lockImage ? 'locked' : 'unlocked'}}"
+             src="https://picsum.photos/100/100?seed={{image.seedNumber}}"
+             (click)="lockImage(images.indexOf(image))"
+             alt="seed image in gallery"
+        >
+        <button class="image-gallery__reload" (click)="getNewImages()">
+          <mat-icon fontIcon="refresh"></mat-icon>
+          Generate New Images
+        </button>
+      </figure>
+    </div>
+  </div>
+
+  <div class="component__card image-gallery__locked-image-card">
+    <div class="sub-heading"><h1>Locked Images</h1></div>
+    <div class="locked-image-container">
+      <img *ngFor="let image of lockedImages" src="https://picsum.photos/100/100?seed={{image.seedNumber}}">
+    </div>
+  </div>
+
+</div>

@@ -1,7 +1,7 @@
-@import "../../theme/colors";
+@import "../../../theme/colors";
 
 .clock__display {
-  background-color: $MOONSTONE;
+  background-image: linear-gradient(to bottom right, $MOONSTONE, $TOMATO , $MUSTARD);
   border-radius: 10px;
   padding: 2rem 0;
   margin: 10% 0 0 25%;
@@ -17,10 +17,9 @@
   --_r: calc((var(--_w) - var(--_sz)) / 2);
   --_sz: 12cqi;
 
-  background: $TOMATO;
+  background-color: rgb(#ffffff,  70%);
   block-size: var(--_ow);
   border-radius: 50%;
-  border: 2px solid;
   container-type: inline-size;
   display: grid;
   font-family: "Times New Roman", Times, serif;
@@ -32,7 +31,7 @@
 
 .clock-face {
   aspect-ratio: 1;
-  background: var(--_bgc, $GHOST_WHITE);
+  background-color: var(--_bgc, $GHOST_WHITE);
   border-radius: 50%;
   block-size: var(--_w);
   font-size: 6cqi;
@@ -53,6 +52,9 @@
   position: absolute;
   top: var(--_y);
   width: var(--_sz);
+  background: -webkit-linear-gradient($MOONSTONE, $TOMATO, $MUSTARD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .clock-face time:nth-child(1) { --_d: 270deg; }
@@ -69,7 +71,7 @@
 .clock-face time:nth-child(12) { --_d: 240deg; }
 
 .arm {
-  background-color: var(--_abg);
+  background-image: linear-gradient(to bottom right, $MOONSTONE, $TOMATO);
   border-radius: calc(var(--_aw) * 2);
   display: block;
   height: var(--_ah);
@@ -81,7 +83,6 @@
   width: var(--_aw);
 }
 .seconds {
-  --_abg: rgb(255, 140, 5);
   --_ah: 40cqi;
   --_aw: 1cqi;
   animation: turn 60s linear infinite;
@@ -89,7 +90,6 @@
 }
 
 .minutes {
-  --_abg: #333;
   --_ah: 35cqi;
   --_aw: 2.5cqi;
   animation: turn 3600s steps(60, end) infinite;
@@ -97,7 +97,6 @@
 }
 
 .hours {
-  --_abg: #333;
   --_ah: 30cqi;
   --_aw: 2.5cqi;
   animation: turn 43200s linear infinite; /* 60 * 60 * 12 */
@@ -106,16 +105,16 @@
 }
 
 .hours::before {
-  background-color: #fff;
-  border: 1cqi solid #333;
+  background-color: $TOMATO_100;
+  border: 1cqi solid $TOMATO;
   border-radius: 50%;
   content: "";
   display: block;
-  height: 4cqi;
+  height: 5cqi;
   position: absolute;
   bottom: -3cqi;
   left: -1.75cqi;
-  width: 4cqi;
+  width: 5cqi;
 }
 
 html {

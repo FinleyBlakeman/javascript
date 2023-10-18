@@ -1,0 +1,109 @@
+@import "../../../theme/colors";
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5rem;
+  align-items: end;
+}
+
+.component__card {
+  background-image: linear-gradient(to bottom right, $TOMATO_100, $GHOST_WHITE);
+  width: 100%;
+  margin-left: 10%;
+}
+
+.image-gallery__locked-image-card {
+  display: grid;
+  width: 25rem;
+  height: 33rem;
+}
+
+.locked-image-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1rem;
+  justify-content: center;
+}
+
+.image-gallery {
+  --_w: 31.25rem;
+  --_r: calc((var(--_w) - var(--_sz)) / 2);
+  --_sz: 6.25rem;
+  --_x: calc(var(--_r) + (var(--_r) * cos(var(--_d))));
+  --_y: calc(var(--_r) + (var(--_r) * sin(var(--_d))));
+
+  border-radius: 50%;
+
+  &__figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    aspect-ratio: 1;
+    list-style-type: none;
+    inline-size: var(--_w);
+    padding: unset;
+    position: relative;
+
+    & .image-gallery__image-bubble {
+      &:nth-child(1) {--_d: 270deg;}
+      &:nth-child(2) {--_d: 300deg;}
+      &:nth-child(3) {--_d: 330deg;}
+      &:nth-child(4) {--_d: 0deg;}
+      &:nth-child(5) {--_d: 30deg;}
+      &:nth-child(6) {--_d: 60deg;}
+      &:nth-child(7) {--_d: 90deg;}
+      &:nth-child(8) {--_d: 120deg;}
+      &:nth-child(9) {--_d: 150deg;}
+      &:nth-child(10) {--_d: 180deg;}
+      &:nth-child(11) {--_d: 210deg;}
+      &:nth-child(12) {--_d: 240deg;}
+    }
+  }
+
+  &__image-bubble {
+    display: grid;
+    left: var(--_x);
+    place-content: center;
+    position: absolute;
+    top: var(--_y);
+    transition: transform .2s ease-in;
+  }
+
+  &__image-bubble--locked {
+    filter: grayscale(100%);
+  }
+}
+
+.image-gallery__reload {
+  display: flex;
+  align-items: center;
+  width: 14rem;
+
+  border-radius: 1rem;
+  border: 1px solid;
+  background-color: $GHOST_WHITE;
+
+  &:hover {
+    background-color: $PLATINUM;
+    color: $BLACK;
+  }
+}
+
+p {display: none;}
+
+@supports (left: calc(1px * cos(45deg))) {
+  img:hover {
+    transform: scale(1.4);
+  }
+}
+
+@supports not (left: calc(1px * cos(45deg))) {
+  p { display: block; }
+  img {
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%,-50%) rotate(var(--_d)) translate(var(--_r)) rotate(calc(-1*var(--_d)))
+  }
+}

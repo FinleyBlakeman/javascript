@@ -1,15 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { ClockComponent } from './clock/clock.component';
-import { PreviewCardComponent } from './common/preview-card/preview-card.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {AppComponent} from "./root/app.component";
+import {ClockComponent} from "./Component Library/clock/clock.component";
+import {PreviewCardComponent} from "./Component Library/common/preview-card/preview-card.component";
+import {DashboardComponent} from "./dashboard/dashboard.component";
+import {PageHeaderComponent} from "./Component Library/common/page-header/page-header.component";
+import {ToggleComponent} from "./Component Library/toggle/toggle.component";
+import {
+  CircularImageGalleryComponent
+} from "./Component Library/circular-image-gallery/circular-image-gallery.component";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {MatCardModule} from "@angular/material/card";
 import {MatIconModule} from "@angular/material/icon";
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { PageHeaderComponent } from './common/page-header/page-header.component';
-import { ToggleComponent } from './toggle/toggle.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,8 @@ import { ToggleComponent } from './toggle/toggle.component';
     PreviewCardComponent,
     DashboardComponent,
     PageHeaderComponent,
-    ToggleComponent
+    ToggleComponent,
+    CircularImageGalleryComponent
   ],
   imports: [
     BrowserModule,
