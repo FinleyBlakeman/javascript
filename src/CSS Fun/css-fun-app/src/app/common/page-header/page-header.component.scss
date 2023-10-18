@@ -1,0 +1,17 @@
+@import "../../../theme/colors";
+
+.header {
+  &__container {
+    background-color: white;
+    color: black;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 2rem;
+    padding-left: 1rem;
+    font-weight: bold;
+  }
+}

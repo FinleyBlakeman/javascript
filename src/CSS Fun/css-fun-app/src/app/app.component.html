@@ -1,0 +1,29 @@
+<ul class="app app__side-nav">
+  <li class="app__link">
+    <img src="../assets/logo.png"
+         class="app app__logo"
+         alt="'Finley Blakeman - Software Engineer logo'">
+    <h1 class="app app__title">{{title}}</h1>
+  </li>
+  <li class="app__link">
+    <a class="active" routerLink="/">
+      <mat-icon [fontIcon]="dashIcon" class="app app__icon"></mat-icon>
+      Dashboard
+    </a>
+  </li>
+  <li class="app__link">
+    <a>
+      <mat-icon [fontIcon]="contactIcon" class="app app__icon"></mat-icon>
+      Contact
+    </a>
+  </li>
+  <li class="app__link">
+    <a>
+      <mat-icon [fontIcon]="aboutIcon" class="app app__icon"></mat-icon>
+      About
+    </a>
+  </li>
+</ul>
+<div class="app__body">
+  <router-outlet></router-outlet>
+</div>

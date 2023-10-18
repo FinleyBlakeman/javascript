@@ -5,7 +5,7 @@ const Minimum = (firstValue, secondValue) => {
         return secondValue;
     }
     
-    if(typeof(firstValue) !== Number || typeof(secondValue) !== Number) {
+    if(typeof(firstValue) !== "number" || typeof(secondValue) !== "number") {
         return 'Please ensure that both inputs are numbers.';
     }
 }

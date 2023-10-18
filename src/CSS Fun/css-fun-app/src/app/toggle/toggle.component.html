@@ -1,0 +1,16 @@
+<app-page-header [title]="'Sun and Moon Toggle'"></app-page-header>
+<div id="toggle" class="toggle__card" [style]="greetingColors">
+  <label for="mode-toggle" class="switch">
+    <input id="mode-toggle" type="checkbox">
+    <span class="toggle" (click)="toggleClicked()"></span>
+
+    <span class="backshadows shadow shadow__one"></span>
+    <span class="backshadows shadow shadow__two"></span>
+    <span class="backshadows shadow shadow__three"></span>
+    <span class="frontshadows shadow shadow__four"></span>
+    <span class="frontshadows shadow shadow__five"></span>
+    <span class="frontshadows shadow shadow__six"></span>
+  </label>
+
+  <label for="mode-toggle" class="toggle__greeting" [style]="greetingColors">{{greeting}}</label>
+</div>

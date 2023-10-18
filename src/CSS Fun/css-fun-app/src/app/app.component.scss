@@ -1,0 +1,44 @@
+@import "../theme/colors";
+
+.app {
+  display: flex;
+
+  &__title {
+    color: $PLATINUM;
+    margin: 1rem 1rem;
+  }
+  &__body {
+    display: grid;
+    margin-left: 19rem;
+  }
+  &__side-nav {
+    background-color: $PAYNES_GREY;
+  }
+  &__link {
+    cursor: pointer;
+
+    & a {
+      color: $GHOST_WHITE;
+      font-size: 1rem;
+    }
+
+    & a.active, a:hover:not(.active)  {
+      background-color: $GHOST_WHITE;
+      color: $BLACK;
+    }
+
+    &:first-child {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+  }
+  &__icon {
+    padding-right: 1rem;
+  }
+  &__logo {
+    height: 13rem;
+    width: 13rem;
+  }
+}
