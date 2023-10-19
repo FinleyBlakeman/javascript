@@ -1,6 +1,4 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing.module';
+import {NgModule} from "@angular/core";
 import {AppComponent} from "./root/app.component";
 import {ClockComponent} from "./Component Library/clock/clock.component";
 import {PreviewCardComponent} from "./Component Library/common/preview-card/preview-card.component";
@@ -10,9 +8,12 @@ import {ToggleComponent} from "./Component Library/toggle/toggle.component";
 import {
   CircularImageGalleryComponent
 } from "./Component Library/circular-image-gallery/circular-image-gallery.component";
+import {BrowserModule} from "@angular/platform-browser";
+import {AppRoutingModule} from "./app-routing.module";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {MatCardModule} from "@angular/material/card";
 import {MatIconModule} from "@angular/material/icon";
+
 
 @NgModule({
   declarations: [
